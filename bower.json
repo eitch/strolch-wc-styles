@@ -17,6 +17,6 @@
   "homepage": "https://github.com/4treesCH/strolch-wc-styles",
   "ignore": [],
   "dependencies": {
-    "polymer": "Polymer/polymer#^1.7.1"
+    "polymer": "Polymer/polymer#^1.11.3"
   }
 }
