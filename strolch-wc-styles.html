@@ -70,6 +70,33 @@
             }
 
             /*
+             * Flex tables
+             */
+            .g-flex-table {
+                min-width: 100%;
+                display: flex;
+                flex-direction: column;
+            }
+
+            .g-flex-table-row {
+                box-sizing: border-box;
+                display: flex;
+                flex-direction: row;
+            }
+
+            .g-flex-table-cell {
+                display: flex;
+                padding: 0 5px;
+                overflow: hidden;
+                align-items: center;
+                flex-basis: 100px;
+                flex-grow: 1;
+                flex-shrink: 0;
+                justify-content: flex-start;
+                min-height: 48px;
+            }
+
+            /*
              * Tables
              */
             .g-table {
