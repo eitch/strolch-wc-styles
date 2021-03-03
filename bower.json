@@ -1,7 +1,7 @@
 {
   "name": "strolch-wc-styles",
   "description": "Strolch WebComponent Styles",
-  "version": "0.3.0",
+  "version": "0.3.1",
   "authors": ["Robert von Burg"],
   "keywords": [
     "strolch",
@@ -11,10 +11,10 @@
   "private": true,
   "repository": {
     "type": "git",
-    "url": "git@github.com:4treesCH/strolch-wc-styles.git"
+    "url": "git@github.com:strolch-li/strolch-wc-styles.git"
   },
-  "license": "https://github.com/4treesCH/strolch-wc-styles/blob/master/LICENSE",
-  "homepage": "https://github.com/4treesCH/strolch-wc-styles",
+  "license": "https://github.com/strolch-li/strolch-wc-styles/blob/master/LICENSE",
+  "homepage": "https://github.com/strolch-li/strolch-wc-styles",
   "ignore": [],
   "dependencies": {
     "polymer": "Polymer/polymer#^1.11.3"
