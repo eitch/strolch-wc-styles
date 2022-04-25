@@ -1,5 +1,6 @@
 <link rel="import" href="../polymer/polymer.html">
-<link rel="import" href="../paper-styles/color.html">
+
+<link rel="import" href="../paper-styles/paper-styles.html">
 
 <link rel="import" href="./strolch-wc-styles.html">
 
@@ -31,38 +32,57 @@
 
                 /* highlight colors */
                 --app-light-highlight-fg-color: black;
-                --app-light-highlight-bg-color: var(--paper-indigo-100);
+                --app-light-highlight-bg-color: #c5cae9;
                 --app-regular-highlight-fg-color: white;
-                --app-regular-highlight-bg-color: var(--paper-indigo-200);
+                --app-regular-highlight-bg-color: #9fa8da;
                 --app-dark-highlight-fg-color: white;
-                --app-dark-highlight-bg-color: var(--paper-indigo-400);
+                --app-dark-highlight-bg-color: #5c6bc0;
 
                 /* warning colors */
                 --app-light-warning-fg-color: white;
-                --app-light-warning-bg-color: var(--paper-red-200);
+                --app-light-warning-bg-color: #ef9a9a; /*var(--paper-red-200);*/
                 --app-regular-warning-fg-color: white;
-                --app-regular-warning-bg-color: var(--paper-red-700);
+                --app-regular-warning-bg-color: #d32f2f; /*var(--paper-red-700);*/
                 --app-dark-warning-fg-color: white;
-                --app-dark-warning-bg-color: var(--paper-red-700);
+                --app-dark-warning-bg-color: #b71c1c; /*var(--paper-red-700);*/
 
                 /* warning colors */
                 --app-light-warning2-fg-color: white;
-                --app-light-warning2-bg-color: var(--paper-amber-100);
+                --app-light-warning2-bg-color: #ffecb3; /*var(--paper-amber-100);*/
                 --app-regular-warning2-fg-color: white;
-                --app-regular-warning2-bg-color: var(--paper-amber-200);
+                --app-regular-warning2-bg-color: #ffe082; /*var(--paper-amber-200);*/
                 --app-dark-warning2-fg-color: white;
-                --app-dark-warning2-bg-color: var(--paper-amber-700);
+                --app-dark-warning2-bg-color: #ffa000; /*var(--paper-amber-700); */
 
                 /* decent colors */
                 --app-light-decent-fg-color: black;
-                --app-light-decent-bg-color: var(--paper-grey-100);
+                --app-light-decent-bg-color: #f5f5f5; /*var(--paper-grey-100);*/
                 --app-regular-decent-fg-color: black;
-                --app-regular-decent-bg-color: var(--paper-grey-200);
+                --app-regular-decent-bg-color: #eeeeee; /*var(--paper-grey-200); */
                 --app-dark-decent-fg-color: black;
-                --app-dark-decent-bg-color: var(--paper-grey-300);
+                --app-dark-decent-bg-color: #e0e0e0; /*var(--paper-grey-300);*/
 
                 --paper-toolbar-background: var(--app-dark-highlight-bg-color);
+                --paper-dialog-button-color: var(--app-dark-highlight-bg-color);
 
+            }
+
+            app-toolbar {
+                background-color: var(--app-dark-highlight-bg-color);
+                color: var(--app-regular-highlight-fg-color);
+            }
+
+            paper-menu {
+                --paper-menu-selected-item: {
+                    background-color: var(--app-light-highlight-bg-color);
+                };
+                --paper-menu-focused-item: {
+                    background-color: var(--app-regular-highlight-bg-color);
+                };
+            }
+
+            paper-menu paper-item:hover {
+                background-color: var(--app-regular-highlight-bg-color);
             }
 
             h1, h2, h3, h4, h5, h6 {
@@ -101,8 +121,8 @@
             }
 
             paper-button[disabled] {
-                background: var(--paper-grey-200);
-                color: var(--paper-grey-500);
+                background: #eeeeee;
+                color: #9e9e9e;
             }
 
             paper-checkbox {
