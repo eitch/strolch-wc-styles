@@ -1,7 +1,7 @@
 {
   "name": "strolch-wc-styles",
   "description": "Strolch WebComponent Styles",
-  "version": "0.4.1",
+  "version": "0.4.2",
   "authors": ["Robert von Burg"],
   "keywords": [
     "strolch",

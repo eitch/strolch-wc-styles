@@ -27,6 +27,8 @@
                 --column-side-padding: 12px;
 
                 /* primary colors */
+                --primary-color: #9965F4;
+                --secondary-color: #616161;
                 --app-primary-color: #9965F4;
                 --app-secondary-color: #616161;
 
@@ -34,9 +36,9 @@
                 --app-light-highlight-fg-color: black;
                 --app-light-highlight-bg-color: #c5cae9;
                 --app-regular-highlight-fg-color: white;
-                --app-regular-highlight-bg-color: #9fa8da;
+                --app-regular-highlight-bg-color: #5c6bc0;
                 --app-dark-highlight-fg-color: white;
-                --app-dark-highlight-bg-color: #5c6bc0;
+                --app-dark-highlight-bg-color: #1a237e;
 
                 /* warning colors */
                 --app-light-warning-fg-color: white;
@@ -62,14 +64,21 @@
                 --app-dark-decent-fg-color: black;
                 --app-dark-decent-bg-color: #e0e0e0; /*var(--paper-grey-300);*/
 
-                --paper-toolbar-background: var(--app-dark-highlight-bg-color);
-                --paper-dialog-button-color: var(--app-dark-highlight-bg-color);
-
+                --disabled-fg-color: #9e9e9e;
+                --disabled-bg-color: #eeeeee;
+                --selected-bg-color: #e7e7e7;
+                --row-even-bg-color: #f1eeee;
+                --paper-card-bg-color: #ffffff;
+                --paper-material-bg-color: #ffffff;
             }
 
             app-toolbar {
-                background-color: var(--app-dark-highlight-bg-color);
+                background-color: var(--primary-color);
                 color: var(--app-regular-highlight-fg-color);
+            }
+
+            app-drawer {
+                z-index: 10;
             }
 
             paper-menu {
@@ -81,12 +90,12 @@
                 };
             }
 
-            paper-menu paper-item:hover {
-                background-color: var(--app-regular-highlight-bg-color);
+            paper-menu paper-item {
+                cursor: pointer;
             }
 
-            h1, h2, h3, h4, h5, h6 {
-                color: var(--app-primary-color);
+            paper-menu paper-item:hover {
+                background-color: var(--app-regular-highlight-bg-color);
             }
 
             .center {
@@ -94,14 +103,14 @@
             }
 
             paper-material {
-                background: white;
+                background-color: var(--paper-material-bg-color);
                 padding: 10px;
                 margin: 10px;
             }
 
             paper-card {
                 width: 100%;
-                background: white;
+                background-color: var(--paper-card-bg-color);
             }
 
             paper-card .header {
@@ -111,18 +120,16 @@
             paper-toggle-button {
                 margin-left: 10px;
                 margin-right: 5px;
-                --paper-toggle-button-checked-button-color: var(--app-primary-color);
+                --paper-toggle-button-checked-button-color: var(--app-dark-highlight-bg-color);
             }
 
             paper-button {
-                background: var(--app-dark-highlight-fg-color);
-                color: var(--app-light-highlight-fg-color);
-                height: 35px;
+                background-color: var(--app-dark-highlight-fg-color);
             }
 
             paper-button[disabled] {
-                background: #eeeeee;
-                color: #9e9e9e;
+                background-color: var(--disabled-bg-color);
+                color: var(--disabled-fg-color);
             }
 
             paper-checkbox {
@@ -142,10 +149,6 @@
                 --paper-input-container-underline-disabled: {
                     display: none;
                 };
-            }
-
-            h3 {
-                margin-bottom: 0;
             }
 
             .content {
@@ -233,7 +236,7 @@
             }
 
             .data:nth-child(even) {
-                background: #f1eeee;
+                background-color: var(--row-even-bg-color);
             }
 
             .table-heading {
@@ -254,9 +257,8 @@
             }
 
             .selected {
-                background: #e7e7e7;
+                background-color: var(--selected-bg-color);
             }
-
         </style>
     </template>
 </dom-module>
